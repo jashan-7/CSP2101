@@ -16,7 +16,7 @@ ranage=$(( RANDOM % (70 - 20 + 1) + 20)) #ranage is a variable for random age pr
 
 while true; do     #start a while loop for testing the input and comparing it with ranage.
      
-echo "Guess the Age of a person."  #this will echo to user at start of game.
+echo "Guess the Age of a person between 20 and 70."  #this will echo to user at start of game.
 read -p "Enter the Age: " selage   #prompt user to enter input and store input in selage variable.
 
      if [[ $selage =~ ^[0-9] ]] && [ "$selage" -ge 20 ] && [ "$selage" -le 70 ]; then  #if structure to test the input i.e. input must made up of 0 to 9 and should be greater then 20 and less then 70.
